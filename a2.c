@@ -1,22 +1,11 @@
-#include <stdio.h>
-#include <ctype.h>
+#include<stdio.h>
+struct s1{
+    long a;
+    double b;
+}; 
 
-void spacedUppercase(const char *sentence) {
-    while (*sentence) {
-        printf("%c ", toupper(*sentence));
-        sentence++;
-    }
-    printf("\n");
-}
-
-int main() {
-    char sentence[100];
-    
-    printf("Enter a sentence: ");
-    fgets(sentence, sizeof(sentence), stdin);
-    
-    printf("Output: ");
-    spacedUppercase(sentence);
-    
+int main()
+{
+    printf("%d",sizeof(struct s1));
     return 0;
 }
